@@ -13,10 +13,10 @@ pipeline {
     }
   }
   environment {
-    MY_NAME = 'Bong, James Bong'
+    MY_NAME = 'Mary'
     TEST_USER = credentials('test-user')
   }
   parameters {
-    string(name: 'Name', defaultValue: 'Whoever you are', description: 'Who should I say hello to?')
+    string(name: 'Name', defaultValue: 'whoever you are', description: 'Who should I say hi to?')
   }
 }
